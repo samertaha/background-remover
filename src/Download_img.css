@@ -1,0 +1,61 @@
+.download_img_title {
+  color: white;
+  font-family: "Aduma";
+  font-size: 25px;
+  text-align: right;
+  padding-right: 81px;
+  padding-top: 10px;
+}
+
+.download_img_cont {
+  height: 50%;
+  position: relative;
+}
+
+.download_img_subtitle {
+  color: white;
+  font-family: "Aduma";
+  font-size: 20px;
+  text-align: right;
+  margin-right: 27px;
+}
+
+.download_img_new {
+  position: absolute;
+  right: 15px;
+  top: 6px;
+}
+
+.padding-top-title {
+  padding-right: 27px;
+}
+
+.download_btn {
+  background-color: transparent;
+  border: 1px solid #2196f3;
+  color: #2196f3;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 25px;
+  height: 35px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.last_title {
+  color: white;
+  text-align: right;
+  font-size: 10px;
+  margin-right: 38px;
+  margin-top: 22px;
+}
+
+.check_img {
+  position: absolute;
+  top: 147px;
+  right: 19px;
+}
+
+.download_img_cont_border {
+  border-top: 1px solid gray;
+}

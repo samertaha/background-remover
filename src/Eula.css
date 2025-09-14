@@ -1,0 +1,22 @@
+.eula_popup_cont {
+  background-color: white;
+  width: 500px;
+  height: 481px;
+  border: 1px solid black;
+  position: absolute;
+  top: 216px;
+  left: 506px;
+  border-radius: 10px;
+}
+
+.close_eula {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.eula_popup_text {
+  margin-top: 34px;
+  margin-left: 40px;
+}
