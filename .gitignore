@@ -38,8 +38,3 @@ back/no_bg_img/
 # Misc
 *.swp
 *.swo
-
-# Optional: ignore font and asset cache
-*.ttf
-*.woff
-*.woff2
