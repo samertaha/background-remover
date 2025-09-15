@@ -45,7 +45,10 @@ const Nobg = (props) => {
       {props.img_name && props.title === "Nobg" ? (
         <img
           className="uploaded_img"
-          src={"http://localhost:5000/no_bg_img/no_bg_" + props.img_name}
+          src={
+            "https://background-remover-2ape.onrender.com/no_bg_img/no_bg_" +
+            props.img_name
+          }
           alt="uploaded"
         />
       ) : (
