@@ -3,6 +3,18 @@ const app = express();
 const cors = require("cors");
 const fileupload = require("express-fileupload");
 const send_to_api = require("./send_to_api");
+const fs = require("fs");
+const path = require("path");
+
+// Ensure upload_img and no_bg_img directories exist
+const uploadDir = path.join(__dirname, "upload_img");
+if (!fs.existsSync(uploadDir)) {
+  fs.mkdirSync(uploadDir);
+}
+const noBgDir = path.join(__dirname, "no_bg_img");
+if (!fs.existsSync(noBgDir)) {
+  fs.mkdirSync(noBgDir);
+}
 
 app.use(cors());
 app.use(fileupload());
@@ -22,7 +34,7 @@ app.post("/upload_file", (req, res) => {
 
   let fileName = time + "_" + req.files.file.name;
 
-  let file_path = __dirname + "/upload_img/" + fileName;
+  let file_path = path.join(uploadDir, fileName);
 
   req.files.file.mv(file_path, async function (err) {
     if (err) {
