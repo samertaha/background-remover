@@ -56,7 +56,7 @@ export const Bg = () => {
     let file_info = e.target.files[0];
 
     // let url = "http://localhost:5000/upload_file";
-    let url = "https://background-remover-2ape.onrender.com:5000/upload_file";
+    let url = "https://background-remover-2ape.onrender.com/upload_file";
 
     if (file_info.size <= 10000000) {
       if (
