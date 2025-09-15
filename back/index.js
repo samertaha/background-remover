@@ -12,7 +12,7 @@ app.use("/upload_img", express.static("upload_img"));
 // app.use(express.static("no_bg_img"));
 // app.use(express.static("upload_img"));
 
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 app.post("/upload_file", (req, res) => {
   let d = new Date();
